@@ -1,0 +1,242 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    letter-spacing: 0.05em;
+}
+.container{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.nav{
+    height: auto;
+    background-color: white;
+    opacity: 0.6;
+}
+.nav::after{
+	content: "";
+	clear:both;
+	display: table;
+}
+.nav span a{
+	float: left;
+	padding: 20px;
+	font-weight: 900;
+    font-size: 40px;
+    margin-left: 150px;
+}
+.nav span a:hover{
+    color: darkmagenta;
+}
+.nav ul{
+	list-style-type: none;
+	float: right;
+	padding: 24px;
+}
+.nav li{
+	display: inline-block;
+    font-weight: bold;
+    padding-top: 10px;
+}
+.nav li a{
+	padding: 16px;
+}
+.nav li a:hover{
+    color: darkmagenta;
+}
+.icon{
+    position: absolute;
+    padding: 5px 12px;
+    right: 50px;
+    background-color: midnightblue;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: ;
+}
+.icon:hover{
+    background-color: darkmagenta;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.icon span{
+    color: white;
+    font-weight: bold;
+}
+.icon img{
+    padding-right: 15px; 
+}
+
+.heading{
+    float: left;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 60px;
+    color: whitesmoke;
+    padding: 10px;
+    text-align: center;
+    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    line-height: 35px;
+}
+.article{
+    height: auto;
+    background-image: url('image/background.png');
+}
+.content{
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 100px;
+}
+.left{
+	margin-top: 16px;
+	width: 25%;
+	display: inline-block;
+	background-color: aliceblue;
+	height: auto;
+	border-radius: 20px;
+    opacity: 0.8;
+}
+.right{
+	width: 64%;
+	margin-left: 5%;
+	vertical-align:top;
+	height: auto;
+	border-radius: 24px;
+	display: inline-block;
+	padding: 8px;
+}
+.left h2{
+	padding: 32px;
+	text-align: center;
+    color: chartreuse;
+    font-weight: 80;
+}
+
+.btn{
+	width: 70%;
+	border-radius: 15px;
+	padding: 6px 14px;
+	display:block;
+	margin:0 auto;
+	margin-top: 16px;
+	margin-bottom: 16px;
+	background-color: rebeccapurple;
+	text-align: center;
+	color: white;
+}
+.line{
+	width: 25%;
+	height: 1px;
+	margin: 0 auto;
+	border-radius: 2px;
+	background-color: lightgreen;
+}
+.textcontent{
+    margin: 15px 30px;
+	padding: 16px;
+	font-size: 14px;
+}
+.container::after{
+	content: "";
+	clear:both;
+	display: table;
+}
+.small-box{
+	background-color: white;
+	width: 180px;
+	display: inline-block;
+	height: 290px;
+	margin: 8px 8px 8px 8px;	
+	border-radius: 18px;
+    opacity: 0.9;
+}
+.small-header{
+	height: 50px;
+	border-top-left-radius: 18px;
+	border-top-right-radius: 18px;
+	background-color: deepskyblue;
+}
+.small-header h3{
+	padding: 16px;
+	color: white;
+	text-align: center;
+}
+.small-body img{
+	display: block;
+	height: 150px;
+	width: auto;
+	margin: 0 auto;
+}
+.small-footer a{
+	margin: 8px auto;
+}
+.btn-small{
+	width: 55%;
+	border-radius: 16px;
+	padding: 7px;
+	font-size: 0.7em;
+	display: block;
+	text-align: center;
+	color: white;
+}
+.green{
+    background-color: limegreen;
+    opacity: 0.8;
+}
+.blue{
+    background-color: darkblue;
+    opacity: 0.8;
+}
+footer{
+    background-color:gainsboro;
+    opacity: 0.4;
+}
+.foot{
+    display: inline-block;
+    width: 24%;
+    padding: 30px 0;
+    font-weight: 600;
+}
+.foothead{
+    padding-left: 130px;
+    vertical-align: top;
+    font-weight: 900;
+}
+@media only screen and (max-width: 850px){
+
+    .left,.right{
+        width: 100%;
+        display: block;
+        margin: 10px auto;
+    }
+    .right{
+        margin-left: 0;
+    }
+    .small-box{
+        width: 45%;
+    }
+    .foot{
+        width: 49%;
+    }
+    .foothead{
+        padding-left: 65px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .left,.right{
+        width: 100%;
+        display: block;
+        margin: 10px auto;
+    }
+    .right{
+        padding: 0;
+    }
+    .small-box{
+        width: 90%;
+    }
+}
